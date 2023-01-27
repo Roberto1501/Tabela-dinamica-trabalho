@@ -33,7 +33,7 @@ function row1(){
     else{
         estiloFinal.style.color = "black";
     }
-    document.getElementById("row2-col8").value = resultado;
+    document.getElementById("row2-col8").value = resultado
 }
 
 function row2(){
@@ -73,6 +73,49 @@ function row3(){
         estiloFinal.style.color = "black";
     }
     document.getElementById("row4-col8").value = resultadoFinal;
+
+    console.log(resultadoFinal)
+}
+
+
+function row4(){
+    let credito1 = Number(document.getElementById("row5-col3").value);
+    let debito1 = Number(document.getElementById("row5-col4").value);
+    let creditoOutros1 = Number(document.getElementById("row5-col5").value);
+    let debitoOutros1 = Number(document.getElementById("row5-col6").value);
+    let FeirasDeb1 = Number(document.getElementById("row5-col7").value);
+    let estiloFinal = document.getElementById("row5-col8");
+    let resultadoPrecedente = Number(document.getElementById("row4-col8").value);
+    let resultadoParcial = (credito1+creditoOutros1)-(debito1+debitoOutros1+FeirasDeb1);
+    let resultadoFinal = Number(resultadoPrecedente + resultadoParcial);
+    if(resultadoFinal<0){
+        estiloFinal.style.color = "red";
+    }
+    else{
+        estiloFinal.style.color = "black";
+    }
+    document.getElementById("row5-col8").value = resultadoFinal;
+
+    console.log(resultadoFinal)
+}
+
+function row5(){
+    let credito1 = Number(document.getElementById("row6-col3").value);
+    let debito1 = Number(document.getElementById("row6-col4").value);
+    let creditoOutros1 = Number(document.getElementById("row6-col5").value);
+    let debitoOutros1 = Number(document.getElementById("row6-col6").value);
+    let FeirasDeb1 = Number(document.getElementById("row6-col7").value);
+    let estiloFinal = document.getElementById("row6-col8");
+    let resultadoPrecedente = Number(document.getElementById("row5-col8").value);
+    let resultadoParcial = (credito1+creditoOutros1)-(debito1+debitoOutros1+FeirasDeb1);
+    let resultadoFinal = Number(resultadoPrecedente + resultadoParcial);
+    if(resultadoFinal<0){
+        estiloFinal.style.color = "red";
+    }
+    else{
+        estiloFinal.style.color = "black";
+    }
+    document.getElementById("row6-col8").value = resultadoFinal;
 
     console.log(resultadoFinal)
 }
