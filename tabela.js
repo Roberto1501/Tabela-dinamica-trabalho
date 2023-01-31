@@ -120,3 +120,70 @@ function row5(){
     console.log(resultadoFinal)
 }
 
+
+function row6(){
+    let credito1 = Number(document.getElementById("row7-col3").value);
+    let debito1 = Number(document.getElementById("row7-col4").value);
+    let creditoOutros1 = Number(document.getElementById("row7-col5").value);
+    let debitoOutros1 = Number(document.getElementById("row7-col6").value);
+    let FeirasDeb1 = Number(document.getElementById("row7-col7").value);
+    let estiloFinal = document.getElementById("row7-col8");
+    let resultadoPrecedente = Number(document.getElementById("row6-col8").value);
+    let resultadoParcial = (credito1+creditoOutros1)-(debito1+debitoOutros1+FeirasDeb1);
+    let resultadoFinal = Number(resultadoPrecedente + resultadoParcial);
+    if(resultadoFinal<0){
+        estiloFinal.style.color = "red";
+    }
+    else{
+        estiloFinal.style.color = "black";
+    }
+    document.getElementById("row7-col8").value = resultadoFinal;
+
+    console.log(resultadoFinal)
+}
+
+
+
+function row7(){
+    let credito1 = Number(document.getElementById("row8-col3").value);
+    let debito1 = Number(document.getElementById("row8-col4").value);
+    let creditoOutros1 = Number(document.getElementById("row8-col5").value);
+    let debitoOutros1 = Number(document.getElementById("row8-col6").value);
+    let FeirasDeb1 = Number(document.getElementById("row8-col7").value);
+    let estiloFinal = document.getElementById("row8-col8");
+    let resultadoPrecedente = Number(document.getElementById("row7-col8").value);
+    let resultadoParcial = (credito1+creditoOutros1)-(debito1+debitoOutros1+FeirasDeb1);
+    let resultadoFinal = Number(resultadoPrecedente + resultadoParcial);
+    if(resultadoFinal<0){
+        estiloFinal.style.color = "red";
+    }
+    else{
+        estiloFinal.style.color = "black";
+    }
+    document.getElementById("row8-col8").value = resultadoFinal;
+
+    console.log(resultadoFinal)
+}
+
+
+function row8(){
+    let credito1 = Number(document.getElementById("row9-col3").value);
+    let debito1 = Number(document.getElementById("row9-col4").value);
+    let creditoOutros1 = Number(document.getElementById("row9-col5").value);
+    let debitoOutros1 = Number(document.getElementById("row9-col6").value);
+    let FeirasDeb1 = Number(document.getElementById("row9-col7").value);
+    let estiloFinal = document.getElementById("row9-col8");
+    let resultadoPrecedente = Number(document.getElementById("row8-col8").value);
+    let resultadoParcial = (credito1+creditoOutros1)-(debito1+debitoOutros1+FeirasDeb1);
+    let resultadoFinal = Number(resultadoPrecedente + resultadoParcial);
+    if(resultadoFinal<0){
+        estiloFinal.style.color = "red";
+    }
+    else{
+        estiloFinal.style.color = "black";
+    }
+    document.getElementById("row9-col8").value = resultadoFinal;
+
+    console.log(resultadoFinal)
+}
+
