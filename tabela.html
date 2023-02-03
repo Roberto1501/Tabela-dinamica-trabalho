@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>planilha</title>
 </head>
 <body>
 
@@ -13,7 +13,7 @@
 
     <button class="no-print" type="button" class="button" onclick="buttonClick()">Adicionar FOOD ITALIA</button>
     <button class="no-print" type="button" class="button" onclick="buttonClickDarco()">Adicionar DARCO INVESTIMENTOS</button>
-    
+    <button type="button" class="no-print" onclick="apagar()">APAGAR</button>
     <div id="div-tudo">
 
         <div id="container-titulo">
@@ -22,7 +22,7 @@
     
       
         <div>
-            <input type="text" placeholder="Data" disabled>
+            <input type="text" placeholder="DIAS" disabled>
             <input class="col2" type="text" placeholder="Despesas" disabled>
             <input type="text" placeholder="Food It Credito" disabled>
             <input type="text" placeholder="Food It Debito" disabled>
@@ -33,7 +33,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="1" disabled >
+            <input type="text" placeholder="01" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row2-col3" >
             <input type="text" id="row2-col4" >
@@ -44,7 +44,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="2" disabled>
+            <input type="text" placeholder="02" class="data" disabled>
             <input class="col2" type="text">
             <input type="text" id="row3-col3">
             <input type="text" id="row3-col4">
@@ -55,7 +55,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="3" disabled>
+            <input type="text" placeholder="03" class="data" disabled>
             <input class="col2" type="text">
             <input type="text" id="row4-col3" >
             <input type="text" id="row4-col4" >
@@ -66,8 +66,8 @@
         </div>
     
         <div>
-            <input type="text" placeholder="4" disabled >
-            <input class="col2" type="text">
+            <input type="text" placeholder="04" class="data" disabled >
+            <input class="col2" type="text" >
             <input type="text" id="row5-col3">
             <input type="text" id="row5-col4">
             <input type="text" id="row5-col5">
@@ -77,7 +77,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="5" disabled>
+            <input type="text" placeholder="05" class="data" disabled>
             <input class="col2" type="text">
             <input type="text" id="row6-col3">
             <input type="text" id="row6-col4">
@@ -88,7 +88,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="6" disabled>
+            <input type="text" placeholder="06" class="data" disabled>
             <input class="col2" type="text">
             <input type="text" id="row7-col3">
             <input type="text" id="row7-col4">
@@ -99,7 +99,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="7" disabled >
+            <input type="text" placeholder="07" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row8-col3">
             <input type="text" id="row8-col4">
@@ -110,7 +110,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="8" disabled>
+            <input type="text" placeholder="08" class="data" disabled>
             <input class="col2" type="text">
             <input type="text" id="row9-col3">
             <input type="text" id="row9-col4">
@@ -121,7 +121,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="9" disabled>
+            <input type="text" placeholder="09" class="data" disabled>
             <input class="col2" type="text">
             <input type="text" id="row10-col3">
             <input type="text" id="row10-col4">
@@ -132,7 +132,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="10" disabled >
+            <input type="text" placeholder="10" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row11-col3">
             <input type="text" id="row11-col4">
@@ -143,7 +143,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="11" disabled>
+            <input type="text" placeholder="11" class="data" disabled>
             <input class="col2" type="text">
             <input type="text" id="row12-col3">
             <input type="text" id="row12-col4">
@@ -153,7 +153,7 @@
             <input type="text" id="row12-col8" disabled>
         </div>
         <div>
-            <input type="text" placeholder="12" disabled >
+            <input type="text" placeholder="12" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row13-col3" >
             <input type="text" id="row13-col4" >
@@ -164,7 +164,7 @@
         </div>
             
         <div>
-            <input type="text" placeholder="13" disabled >
+            <input type="text" placeholder="13" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row14-col3">
             <input type="text" id="row14-col4">
@@ -175,7 +175,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="14" disabled >
+            <input type="text" placeholder="14" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row15-col3">
             <input type="text" id="row15-col4">
@@ -186,7 +186,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="15" disabled >
+            <input type="text" placeholder="15" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row16-col3">
             <input type="text" id="row16-col4">
@@ -197,7 +197,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="16" disabled >
+            <input type="text" placeholder="16" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row17-col3">
             <input type="text" id="row17-col4">
@@ -208,7 +208,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="17" disabled >
+            <input type="text" placeholder="17" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row18-col3">
             <input type="text" id="row18-col4">
@@ -219,7 +219,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="18" disabled >
+            <input type="text" placeholder="18" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row19-col3">
             <input type="text" id="row19-col4">
@@ -230,7 +230,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="19" disabled >
+            <input type="text" placeholder="19" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row20-col3">
             <input type="text" id="row20-col4">
@@ -241,7 +241,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="20" disabled>
+            <input type="text" placeholder="20" class="data" disabled>
             <input class="col2" type="text">
             <input type="text" id="row21-col3">
             <input type="text" id="row21-col4">
@@ -252,7 +252,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="21" disabled >
+            <input type="text" placeholder="21" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row22-col3">
             <input type="text" id="row22-col4">
@@ -263,7 +263,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="22" disabled >
+            <input type="text" placeholder="22" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row23-col3">
             <input type="text" id="row23-col4">
@@ -274,7 +274,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="23" disabled >
+            <input type="text" placeholder="23" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row24-col3">
             <input type="text" id="row24-col4">
@@ -285,7 +285,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="24" disabled>
+            <input type="text" placeholder="24" class="data" disabled>
             <input class="col2" type="text">
             <input type="text" id="row25-col3">
             <input type="text" id="row25-col4">
@@ -296,7 +296,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="25" disabled >
+            <input type="text" placeholder="25" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row26-col3">
             <input type="text" id="row26-col4">
@@ -307,7 +307,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="26" disabled >
+            <input type="text" placeholder="26" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row27-col3">
             <input type="text" id="row27-col4">
@@ -318,7 +318,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="27" disabled >
+            <input type="text" placeholder="27" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row28-col3">
             <input type="text" id="row28-col4">
@@ -329,7 +329,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="28" disabled >
+            <input type="text" placeholder="28" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row29-col3">
             <input type="text" id="row29-col4">
@@ -340,7 +340,7 @@
         </div>
     
         <div>
-            <input type="text"  placeholder="29" disabled>
+            <input type="text"  placeholder="29" class="data" disabled>
             <input class="col2" type="text">
             <input type="text" id="row30-col3">
             <input type="text" id="row30-col4">
@@ -351,7 +351,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="30" disabled >
+            <input type="text" placeholder="30" class="data" disabled >
             <input class="col2" type="text">
             <input type="text"  id="row31-col3">
             <input type="text"  id="row31-col4">
@@ -362,7 +362,7 @@
         </div>
     
         <div>
-            <input type="text" placeholder="31" disabled >
+            <input type="text" placeholder="31" class="data" disabled >
             <input class="col2" type="text">
             <input type="text" id="row32-col3">
             <input type="text" id="row32-col4">

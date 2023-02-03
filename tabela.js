@@ -1,5 +1,8 @@
 
-
+function apagar(){
+    localStorage.clear();
+    location.reload();
+}
 
 
 let titulo2 = document.getElementById("container-titulo")
@@ -13,8 +16,171 @@ function buttonClick(){
      mes2 = prompt("digite o mês")
      ano2 = prompt("digite o ano")
     
-    titulo2.innerHTML = "MOVIMENTO DE CAIXA " + mes2 + "/" + ano2 + " FOOD ITALIA"
+    titulo2.innerHTML = "MOVIMENTO DE CAIXA  " + mes2 + "/" + ano2 + " FOOD ITALIA"
     localStorage.setItem("divContent", JSON.stringify(titulo2.innerHTML));
+    
+    
+    switch(mes2){
+        case "JAN":
+            
+            const inputs = document.querySelectorAll(".data");
+            inputs.forEach(input => {
+                const currentPlaceholder = input.placeholder;
+                input.placeholder = currentPlaceholder + "/01";
+                
+              });
+             
+              
+
+            break;
+
+            case "FEV":
+            const inputs1 = document.querySelectorAll(".data");
+            inputs1.forEach(inputs1 => {
+                const currentPlaceholder = inputs1.placeholder;
+                inputs1.placeholder = currentPlaceholder + "/02";
+              });
+              
+
+              
+
+            break;
+
+            case "MAR":
+                const inputs2 = document.querySelectorAll(".data");
+                inputs2.forEach(inputs2 => {
+                    const currentPlaceholder = inputs2.placeholder;
+                    inputs2.placeholder = currentPlaceholder + "/03";
+                  });
+                  
+    
+                  
+    
+                break;
+
+                case "ABR":
+                const inputs3 = document.querySelectorAll(".data");
+                inputs3.forEach(inputs3 => {
+                    const currentPlaceholder = inputs3.placeholder;
+                    inputs3.placeholder = currentPlaceholder + "/04";
+                  });
+                  
+    
+                  
+    
+                break;
+
+
+                case "MAI":
+                const inputs4 = document.querySelectorAll(".data");
+                inputs4.forEach(inputs4 => {
+                    const currentPlaceholder = inputs4.placeholder;
+                    inputs4.placeholder = currentPlaceholder + "/05";
+                  });
+                  
+    
+                  
+    
+                break;
+
+                case "JUN":
+                    const inputs5 = document.querySelectorAll(".data");
+                    inputs5.forEach(inputs5 => {
+                        const currentPlaceholder = inputs5.placeholder;
+                        inputs5.placeholder = currentPlaceholder + "/06";
+                      });
+                      
+        
+                      
+        
+                    break;
+
+                    case "JUL":
+                        const inputs6 = document.querySelectorAll(".data");
+                        inputs6.forEach(inputs6 => {
+                            const currentPlaceholder = inputs6.placeholder;
+                            inputs6.placeholder = currentPlaceholder + "/07";
+                          });
+                          
+            
+                          
+            
+                        break;
+
+                        case "AGO":
+                        const inputs7 = document.querySelectorAll(".data");
+                        inputs7.forEach(inputs7 => {
+                            const currentPlaceholder = inputs7.placeholder;
+                            inputs7.placeholder = currentPlaceholder + "/08";
+                          });
+                          
+            
+                          
+            
+                        break;
+
+                        case "SET":
+                        const inputs8 = document.querySelectorAll(".data");
+                        inputs8.forEach(inputs8 => {
+                            const currentPlaceholder = inputs8.placeholder;
+                            inputs8.placeholder = currentPlaceholder + "/09";
+                          });
+                          
+            
+                          
+            
+                        break;
+
+                        case "OUT":
+                        const inputs9 = document.querySelectorAll(".data");
+                        inputs9.forEach(inputs9 => {
+                            const currentPlaceholder = inputs9.placeholder;
+                            inputs9.placeholder = currentPlaceholder + "/10";
+                          });
+                          
+            
+                          
+            
+                        break;
+
+
+                        case "NOV":
+                        const inputs10 = document.querySelectorAll(".data");
+                        inputs10.forEach(inputs10 => {
+                            const currentPlaceholder = inputs10.placeholder;
+                            inputs10.placeholder = currentPlaceholder + "/11";
+                          });
+                          
+            
+                          
+            
+                        break;
+
+
+                    
+
+                            case "DEZ":
+                                const inputs12 = document.querySelectorAll(".data");
+                                inputs12.forEach(inputs12 => {
+                                    const currentPlaceholder = inputs12.placeholder;
+                                    inputs12.placeholder = currentPlaceholder + "/12";
+                                  });
+                                  
+                    
+                                  
+                    
+                                break;   
+
+                                default:
+                                    alert("Digite um mês correto")
+
+                                    break;
+
+
+
+                        
+  
+    }
     
 }
 let titulo = document.getElementById("container-titulo")
@@ -27,9 +193,171 @@ function buttonClickDarco(){
      mes = prompt("digite o mês")
      ano = prompt("digite o ano")
     
-     titulo.innerHTML = "MOVIMENTO DE CAIXA " + mes + "/" + ano + " DARCO INVESTIMENTOS"
+     titulo.innerHTML = "MOVIMENTO DE CAIXA "  + mes + "/" + ano + " DARCO INVESTIMENTOS"
      localStorage.setItem("divContent", JSON.stringify(titulo.innerHTML));
 
+
+     switch(mes){
+        case "JAN":
+            
+            const inputs = document.querySelectorAll(".data");
+            inputs.forEach(input => {
+                const currentPlaceholder = input.placeholder;
+                input.placeholder = currentPlaceholder + "/01";
+                
+              });
+             
+              
+
+            break;
+
+            case "FEV":
+            const inputs1 = document.querySelectorAll(".data");
+            inputs1.forEach(inputs1 => {
+                const currentPlaceholder = inputs1.placeholder;
+                inputs1.placeholder = currentPlaceholder + "/02";
+              });
+              
+
+              
+
+            break;
+
+            case "MAR":
+                const inputs2 = document.querySelectorAll(".data");
+                inputs2.forEach(inputs2 => {
+                    const currentPlaceholder = inputs2.placeholder;
+                    inputs2.placeholder = currentPlaceholder + "/03";
+                  });
+                  
+    
+                  
+    
+                break;
+
+                case "ABR":
+                const inputs3 = document.querySelectorAll(".data");
+                inputs3.forEach(inputs3 => {
+                    const currentPlaceholder = inputs3.placeholder;
+                    inputs3.placeholder = currentPlaceholder + "/04";
+                  });
+                  
+    
+                  
+    
+                break;
+
+
+                case "MAI":
+                const inputs4 = document.querySelectorAll(".data");
+                inputs4.forEach(inputs4 => {
+                    const currentPlaceholder = inputs4.placeholder;
+                    inputs4.placeholder = currentPlaceholder + "/05";
+                  });
+                  
+    
+                  
+    
+                break;
+
+                case "JUN":
+                    const inputs5 = document.querySelectorAll(".data");
+                    inputs5.forEach(inputs5 => {
+                        const currentPlaceholder = inputs5.placeholder;
+                        inputs5.placeholder = currentPlaceholder + "/06";
+                      });
+                      
+        
+                      
+        
+                    break;
+
+                    case "JUL":
+                        const inputs6 = document.querySelectorAll(".data");
+                        inputs6.forEach(inputs6 => {
+                            const currentPlaceholder = inputs6.placeholder;
+                            inputs6.placeholder = currentPlaceholder + "/07";
+                          });
+                          
+            
+                          
+            
+                        break;
+
+                        case "AGO":
+                        const inputs7 = document.querySelectorAll(".data");
+                        inputs7.forEach(inputs7 => {
+                            const currentPlaceholder = inputs7.placeholder;
+                            inputs7.placeholder = currentPlaceholder + "/08";
+                          });
+                          
+            
+                          
+            
+                        break;
+
+                        case "SET":
+                        const inputs8 = document.querySelectorAll(".data");
+                        inputs8.forEach(inputs8 => {
+                            const currentPlaceholder = inputs8.placeholder;
+                            inputs8.placeholder = currentPlaceholder + "/09";
+                          });
+                          
+            
+                          
+            
+                        break;
+
+                        case "OUT":
+                        const inputs9 = document.querySelectorAll(".data");
+                        inputs9.forEach(inputs9 => {
+                            const currentPlaceholder = inputs9.placeholder;
+                            inputs9.placeholder = currentPlaceholder + "/10";
+                          });
+                          
+            
+                          
+            
+                        break;
+
+
+                        case "NOV":
+                        const inputs10 = document.querySelectorAll(".data");
+                        inputs10.forEach(inputs10 => {
+                            const currentPlaceholder = inputs10.placeholder;
+                            inputs10.placeholder = currentPlaceholder + "/11";
+                          });
+                          
+            
+                          
+            
+                        break;
+
+
+                    
+
+                            case "DEZ":
+                                const inputs12 = document.querySelectorAll(".data");
+                                inputs12.forEach(inputs12 => {
+                                    const currentPlaceholder = inputs12.placeholder;
+                                    inputs12.placeholder = currentPlaceholder + "/12";
+                                  });
+                                  
+                    
+                                  
+                    
+                                break;   
+
+                                default:
+                                    alert("Digite um mês correto")
+
+                                    break;
+
+
+
+                        
+  
+    }
    
 }
 
@@ -40,6 +368,8 @@ function buttonClickDarco(){
 titulo.innerHTML = "MOVIMENTO DE CAIXA " + mes + "/" + ano + " DARCO INVESTIMENTOS"
 // Wait for the page to finish loading
 window.addEventListener("load", function() {
+    
+
     // Get the inputs
     const inputs = document.querySelectorAll("input");
   

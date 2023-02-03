@@ -1,20 +1,36 @@
+
 input{
-    width: 100px;
+    width: 60px;
     text-align: center;
+    height: 15px;
+    border: 1px solid black;
     
 }
 
+input::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+button{
+  margin-bottom: 20px;
+}
 .col2{
-    width: 480px;
+    width: 238px;
 }
 
 #container-titulo{
     height: 30px;
+  
 
 }
 
+#div-tudo{
+  width: 21cm;
+  height: 29.7cm;
+}
+
 @page {
-    size: 2480px 2000px;
+    size: A4;
   }
 
   @media print {
