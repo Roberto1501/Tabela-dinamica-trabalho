@@ -1,28 +1,37 @@
-
+let titulo2 = document.getElementById("container-titulo")
+let mes2 = ""
+let ano2 = ""
 
 function buttonClick(){
     
     
-    let titulo = document.getElementById("container-titulo")
-    let mes = prompt("digite o mês")
-    let ano = prompt("digite o ano")
+     titulo2 = document.getElementById("container-titulo")
+     mes2 = prompt("digite o mês")
+     ano2 = prompt("digite o ano")
     
-    titulo.innerHTML = "MOVIMENTO DE CAIXA " + mes + "/" + ano + " FOOD ITALIA"
+    titulo2.innerHTML = "MOVIMENTO DE CAIXA " + mes2 + "/" + ano2 + " FOOD ITALIA"
+    localStorage.setItem("divContent", JSON.stringify(titulo2.innerHTML));
     
 }
-let titulo = ""
+let titulo = document.getElementById("container-titulo")
 let mes = ""
 let ano = ""
 
 function buttonClickDarco(){
     
-     titulo = document.getElementById("container-titulo")
+     
      mes = prompt("digite o mês")
      ano = prompt("digite o ano")
     
-    
+     titulo.innerHTML = "MOVIMENTO DE CAIXA " + mes + "/" + ano + " DARCO INVESTIMENTOS"
+     localStorage.setItem("divContent", JSON.stringify(titulo.innerHTML));
+
    
 }
+
+
+
+
 
 titulo.innerHTML = "MOVIMENTO DE CAIXA " + mes + "/" + ano + " DARCO INVESTIMENTOS"
 // Wait for the page to finish loading
@@ -61,6 +70,7 @@ window.addEventListener("load", function() {
   
         // Save the updated input data in local storage
         localStorage.setItem("inputData", JSON.stringify(savedInputData));
+        
       });
     });
   
