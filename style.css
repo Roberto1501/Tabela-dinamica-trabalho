@@ -13,9 +13,16 @@ input{
 
 }
 
-#div-tudo {
-    width: 2400px;
-    height: 3508px;  }
+@page {
+    size: 2480px 2000px;
+  }
+
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  }
+
 
 
 
