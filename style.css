@@ -1,6 +1,6 @@
 
 input{
-    width: 60px;
+    width: 35px;
     text-align: center;
     height: 15px;
     border: 1px solid black;
@@ -15,7 +15,7 @@ button{
   margin-bottom: 20px;
 }
 .col2{
-    width: 238px;
+    width: 470px;
 }
 
 #container-titulo{
